@@ -27,13 +27,35 @@
 
 //deep copy
 
-let a = {
-    x:1,
-    y:2,
-};
-let b = {...a}
-a.x = 5;
-console.log(a);
-console.log(b);
+// let a = {
+//     x:1,
+//     y:2,
+// };
+// let b = {...a}
+// a.x = 5;
+// console.log(a);
+// console.log(b);
+
+
+
+//hoisting 
+
+function parent(){
+    var count = 0;
+
+    return function(){
+        count++
+        console.log(count);
+        
+    }
+}
+      let countvalue = parent()
+     countvalue()
+     countvalue()
+     countvalue()
+     countvalue()
+      
+      
+      
 
 
