@@ -70,28 +70,38 @@
 // obj.methode(fn,1)
 
 
-function executeFirstArgument(callback) {
-    if (arguments.length > 0 && typeof arguments[0] === 'function') {
-      arguments[0](); // Execute the first argument (which should be a function)
-    } else {
-      console.error("No function provided as the first argument!");
-    }
-  }
+// function executeFirstArgument(callback) {
+//     if (arguments.length > 0 && typeof arguments[0] === 'function') {
+//       arguments[0](); // Execute the first argument (which should be a function)
+//     } else {
+//       console.error("No function provided as the first argument!");
+//     }
+//   }
   
-  function sayHello() {
-    console.log("Hello!");
-  }
+//   function sayHello() {
+//     console.log("Hello!");
+//   }
   
-  // Correct usage:
-  executeFirstArgument(sayHello); // This will print "Hello!"
+//   // Correct usage:
+//   executeFirstArgument(sayHello); // This will print "Hello!"
   
-  // Incorrect usage:
-  executeFirstArgument(); // This will print "No function provided as the first argument!"
-  executeFirstArgument("not a function"); // This will print "No function provided as the first argument!"
+//   // Incorrect usage:
+//   executeFirstArgument(); // This will print "No function provided as the first argument!"
+//   executeFirstArgument("not a function"); // This will print "No function provided as the first argument!"
 
 
-
+// question asked in amazon interview
       
+let str = 'a.b.c.d.e'
+newstr = str.split(".")
+const obj = newstr.reduceRight(cb)
+
+function cb(acc,next){
+return{[next]:acc}
+}
+
+console.log(obj);
+
       
       
 
