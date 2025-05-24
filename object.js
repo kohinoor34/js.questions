@@ -162,3 +162,11 @@ let stu3 = createobjects("rohan", 20);
 console.log(stu1.checkage());
 console.log(stu2.checkage());
 console.log(stu3.checkage());
+
+
+//get currentyear
+
+const currentdate = new Date()
+console.log(currentdate.getFullYear());
+
+
