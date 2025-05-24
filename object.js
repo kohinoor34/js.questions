@@ -169,4 +169,12 @@ console.log(stu3.checkage());
 const currentdate = new Date()
 console.log(currentdate.getFullYear());
 
+//concat two string
+
+let myname = 'kohinoor'
+let lastname = 'kamble'
+let getfullname = myname.concat(lastname)
+console.log(getfullname);
+
+
 
