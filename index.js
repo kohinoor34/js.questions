@@ -166,15 +166,15 @@ console.log(stu3.checkage());
 
 //get currentyear
 
-const currentdate = new Date()
-console.log(currentdate.getFullYear());
+// const currentdate = new Date()
+// console.log(currentdate.getFullYear());
 
-//concat two string
+// //concat two string
 
-let myname = 'kohinoor'
-let lastname = 'kamble'
-let getfullname = myname.concat(lastname)
-console.log(getfullname);
+// let myname = 'kohinoor'
+// let lastname = 'kamble'
+// let getfullname = myname.concat(lastname)
+// console.log(getfullname);
 
 
 
